@@ -1,0 +1,13 @@
+.navigation-jacks {
+  font-size: 14px;
+}
+
+.action {
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.-active {
+  text-decoration: underline;
+}
