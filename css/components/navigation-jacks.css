@@ -3,11 +3,33 @@
 }
 
 .navigation-jacks > .action {
-  color: red;
+  display: inline-block;
+  color: #333;
   text-decoration: none;
   font-weight: 400;
+  position: relative;
 }
 
-.navigation-jacks > .action.-active {
-  text-decoration: underline;
+.navigation-jacks > .action::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #2d9cdb;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transform-origin: left center;
+  transform: scaleX(0);
+
+  transition: 200ms transform linear;
+}
+
+.navigation-jacks > .action.-active::after {
+  transform: scaleX(0.4);
+
+  transition-duration: 150ms;
+}
+
+.navigation-jacks > .action:hover::after {
+  transform: scaleX(1);
 }
