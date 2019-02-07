@@ -2,12 +2,12 @@
   font-size: 14px;
 }
 
-.navigation-jacks .action {
-  color: #333;
+.navigation-jacks > .action {
+  color: red;
   text-decoration: none;
   font-weight: 400;
 }
 
-.navigation-jacks .action.-active {
+.navigation-jacks > .action.-active {
   text-decoration: underline;
 }
